@@ -1,0 +1,16 @@
+endpoints:
+  beans:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+    sensitive: false
+
+micronaut:
+  application:
+    instance:
+      id: ${random.shortuuid}
+    name: Kotlin + Micronaut micro service
+
+mongodb:
+  uri: "mongodb://localhost:27017/micronaut"

@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: com.github.albertosdlf.kmicronaut
+---
+testFramework: spek
+sourceLanguage: kotlin
