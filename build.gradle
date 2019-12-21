@@ -29,6 +29,7 @@ dependencies {
     implementation "io.micronaut:micronaut-http-client"
     implementation "io.micronaut:micronaut-http-server-netty"
     implementation "javax.annotation:javax.annotation-api"
+    kapt "org.mapstruct:mapstruct-processor:${mapstructVersion}"
     kapt platform("io.micronaut:micronaut-bom:$micronautVersion")
     kapt "io.micronaut:micronaut-inject-java"
     kapt "io.micronaut:micronaut-validation"
@@ -40,12 +41,11 @@ dependencies {
     testImplementation "io.mockk:mockk:1.9.3"
     testImplementation "org.junit.jupiter:junit-jupiter-api"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
-    implementation "org.mapstruct:mapstruct:${mapstructVersion}"
-    annotationProcessor "org.mapstruct:mapstruct-processor:${mapstructVersion}"
-    implementation "org.mapstruct:mapstruct-processor:${mapstructVersion}"
+    compile "org.mapstruct:mapstruct:${mapstructVersion}"
     testImplementation "io.cucumber:cucumber-java8:4.7.4"
     testImplementation "io.cucumber:cucumber-junit:4.7.4"
     implementation "io.micronaut.configuration:micronaut-mongo-reactive:1.2.0"
+    implementation "com.oracle.substratevm:svm:19.2.1"
 
     //tag::spek[]
     testImplementation "org.jetbrains.kotlin:kotlin-test:$kotlinVersion"

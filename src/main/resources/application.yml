@@ -13,4 +13,5 @@ micronaut:
     name: Kotlin + Micronaut micro service
 
 mongodb:
-  uri: "mongodb://localhost:27017/micronaut"
+  uri: "mongodb://localhost:27017"
+  database: micronaut

@@ -1,7 +1,6 @@
 package com.github.albertosdlf.kmicronaut.repository.model
 
 import org.bson.types.ObjectId
-import java.util.Date
 
 data class PersonEntity(
         var id: ObjectId?,
